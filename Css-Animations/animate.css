@@ -1,0 +1,68 @@
+.pulse{
+    animation: pulse1 2s linear infinite ;
+  }
+  
+  .rotate{
+    transform: rotate(0.5turn);
+  }
+  
+  .rotate-half{
+    transform:rotate(0.25turn);
+  }
+
+  shine 
+{
+  animation: shine 1.2s infinite;
+}
+
+@keyframes growDown {
+  0% {
+      transform: scaleY(0)
+  }
+  80% {
+      transform: scaleY(1.1)
+  }
+  100% {
+      transform: scaleY(1)
+  }
+}
+
+@keyframes slideUp {
+
+  0%{
+    transform: scaleY(1.1);
+  }
+
+  10%{
+    transform: scaleY(1);
+  }
+
+  100%{
+    transform: scaleY(0);
+  }
+  
+}
+
+
+@keyframes pulse1{
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 var(--color);
+  }
+  
+  70% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shine {
+    100% {
+      transform: translateX(100%);
+    }
+  }
